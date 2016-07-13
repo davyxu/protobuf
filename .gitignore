@@ -113,3 +113,9 @@ conformance/google/
 conformance/javac_middleman
 conformance/lite/
 conformance/protoc_middleman
+CMakeFiles/
+cmake/
+CMakeCache.txt
+*.sdf
+x64/
+*.suo
