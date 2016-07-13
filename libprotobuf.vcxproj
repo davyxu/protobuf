@@ -78,7 +78,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -97,10 +97,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,7 +114,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305</DisableSpecificWarnings>
@@ -133,10 +133,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -150,7 +150,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305</DisableSpecificWarnings>
@@ -169,10 +169,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -186,7 +186,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -204,10 +204,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;C:\Develop\opensource\src\github.com\davyxu\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Develop\opensource\src\github.com\davyxu\protobuf;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -219,143 +219,82 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Develop/opensource/src/github.com/davyxu/protobuf/cmake/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"D:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Develop/opensource/src/github.com/davyxu/protobuf/cmake -BC:/Develop/opensource/src/github.com/davyxu/protobuf --check-stamp-file C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Develop/opensource/src/github.com/davyxu/protobuf/cmake/CMakeLists.txt;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\CMakeLists.txt;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeCCompiler.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeDependentOption.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-options.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindThreads.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\extract_includes.bat.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotobuf-lite.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotobuf.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotoc.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protoc.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\install.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\GNUInstallDirs.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-config.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-config-version.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-module.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-options.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Develop/opensource/src/github.com/davyxu/protobuf/cmake/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"D:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Develop/opensource/src/github.com/davyxu/protobuf/cmake -BC:/Develop/opensource/src/github.com/davyxu/protobuf --check-stamp-file C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Develop/opensource/src/github.com/davyxu/protobuf/cmake/CMakeLists.txt;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\CMakeLists.txt;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeCCompiler.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeDependentOption.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-options.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindThreads.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\extract_includes.bat.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotobuf-lite.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotobuf.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotoc.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protoc.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\install.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\GNUInstallDirs.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-config.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-config-version.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-module.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-options.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Develop/opensource/src/github.com/davyxu/protobuf/cmake/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"D:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Develop/opensource/src/github.com/davyxu/protobuf/cmake -BC:/Develop/opensource/src/github.com/davyxu/protobuf --check-stamp-file C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Develop/opensource/src/github.com/davyxu/protobuf/cmake/CMakeLists.txt;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\CMakeLists.txt;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeCCompiler.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeDependentOption.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-options.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindThreads.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\extract_includes.bat.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotobuf-lite.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotobuf.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotoc.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protoc.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\install.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\GNUInstallDirs.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-config.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-config-version.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-module.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-options.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Develop/opensource/src/github.com/davyxu/protobuf/cmake/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"D:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Develop/opensource/src/github.com/davyxu/protobuf/cmake -BC:/Develop/opensource/src/github.com/davyxu/protobuf --check-stamp-file C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Develop/opensource/src/github.com/davyxu/protobuf/cmake/CMakeLists.txt;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\CMakeLists.txt;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeCCompiler.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeDependentOption.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-options.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindThreads.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\extract_includes.bat.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotobuf-lite.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotobuf.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\libprotoc.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protoc.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\install.cmake;D:\Program Files (x86)\CMake\share\cmake-3.4\Modules\GNUInstallDirs.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-config.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-config-version.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-module.cmake.in;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\protobuf-options.cmake;C:\Develop\opensource\src\github.com\davyxu\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Develop\opensource\src\github.com\davyxu\protobuf\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\arena.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\arenastring.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\extension_set.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\generated_message_util.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\io\coded_stream.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\io\zero_copy_stream.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\message_lite.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\repeated_field.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\atomicops_internals_x86_gcc.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\bytestream.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\common.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\int128.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\once.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\status.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\statusor.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\stringpiece.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\stringprintf.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\structurally_valid.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\strutil.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\time.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\wire_format_lite.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\any.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\any.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\api.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\compiler\importer.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\compiler\parser.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\descriptor.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\descriptor.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\descriptor_database.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\duration.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\dynamic_message.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\empty.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\extension_set_heavy.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\field_mask.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\generated_message_reflection.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\io\gzip_stream.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\io\printer.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\io\strtod.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\io\tokenizer.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\io\zero_copy_stream_impl.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\map_field.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\message.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\reflection_ops.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\service.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\source_context.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\struct.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\mathlimits.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\stubs\substitute.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\text_format.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\timestamp.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\type.pb.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\unknown_field_set.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\field_comparator.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\field_mask_util.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\datapiece.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\default_value_objectwriter.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\error_listener.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\field_mask_utility.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\json_escaping.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\json_objectwriter.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\json_stream_parser.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\object_writer.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\proto_writer.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\protostream_objectsource.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\protostream_objectwriter.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\type_info.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\type_info_test_helper.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\internal\utility.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\json_util.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\message_differencer.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\time_util.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\util\type_resolver_util.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\wire_format.cc" />
-    <ClCompile Include="C:\Develop\opensource\src\github.com\davyxu\protobuf\src\google\protobuf\wrappers.pb.cc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="C:/Develop/opensource/src/github.com/davyxu/protobuf/ZERO_CHECK.vcxproj">
-      <Project>E7B57D6B-E894-3275-9BCE-8636E7C4EA6D</Project>
-    </ProjectReference>
+    <ClCompile Include="src\google\protobuf\arena.cc" />
+    <ClCompile Include="src\google\protobuf\arenastring.cc" />
+    <ClCompile Include="src\google\protobuf\extension_set.cc" />
+    <ClCompile Include="src\google\protobuf\generated_message_util.cc" />
+    <ClCompile Include="src\google\protobuf\io\coded_stream.cc" />
+    <ClCompile Include="src\google\protobuf\io\zero_copy_stream.cc" />
+    <ClCompile Include="src\google\protobuf\io\zero_copy_stream_impl_lite.cc" />
+    <ClCompile Include="src\google\protobuf\message_lite.cc" />
+    <ClCompile Include="src\google\protobuf\repeated_field.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\atomicops_internals_x86_gcc.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\bytestream.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\common.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\int128.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\once.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\status.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\statusor.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\stringpiece.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\stringprintf.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\structurally_valid.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\strutil.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\time.cc" />
+    <ClCompile Include="src\google\protobuf\wire_format_lite.cc" />
+    <ClCompile Include="src\google\protobuf\any.cc" />
+    <ClCompile Include="src\google\protobuf\any.pb.cc" />
+    <ClCompile Include="src\google\protobuf\api.pb.cc" />
+    <ClCompile Include="src\google\protobuf\compiler\importer.cc" />
+    <ClCompile Include="src\google\protobuf\compiler\parser.cc" />
+    <ClCompile Include="src\google\protobuf\descriptor.cc" />
+    <ClCompile Include="src\google\protobuf\descriptor.pb.cc" />
+    <ClCompile Include="src\google\protobuf\descriptor_database.cc" />
+    <ClCompile Include="src\google\protobuf\duration.pb.cc" />
+    <ClCompile Include="src\google\protobuf\dynamic_message.cc" />
+    <ClCompile Include="src\google\protobuf\empty.pb.cc" />
+    <ClCompile Include="src\google\protobuf\extension_set_heavy.cc" />
+    <ClCompile Include="src\google\protobuf\field_mask.pb.cc" />
+    <ClCompile Include="src\google\protobuf\generated_message_reflection.cc" />
+    <ClCompile Include="src\google\protobuf\io\gzip_stream.cc" />
+    <ClCompile Include="src\google\protobuf\io\printer.cc" />
+    <ClCompile Include="src\google\protobuf\io\strtod.cc" />
+    <ClCompile Include="src\google\protobuf\io\tokenizer.cc" />
+    <ClCompile Include="src\google\protobuf\io\zero_copy_stream_impl.cc" />
+    <ClCompile Include="src\google\protobuf\map_field.cc" />
+    <ClCompile Include="src\google\protobuf\message.cc" />
+    <ClCompile Include="src\google\protobuf\reflection_ops.cc" />
+    <ClCompile Include="src\google\protobuf\service.cc" />
+    <ClCompile Include="src\google\protobuf\source_context.pb.cc" />
+    <ClCompile Include="src\google\protobuf\struct.pb.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\mathlimits.cc" />
+    <ClCompile Include="src\google\protobuf\stubs\substitute.cc" />
+    <ClCompile Include="src\google\protobuf\text_format.cc" />
+    <ClCompile Include="src\google\protobuf\timestamp.pb.cc" />
+    <ClCompile Include="src\google\protobuf\type.pb.cc" />
+    <ClCompile Include="src\google\protobuf\unknown_field_set.cc" />
+    <ClCompile Include="src\google\protobuf\util\field_comparator.cc" />
+    <ClCompile Include="src\google\protobuf\util\field_mask_util.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\datapiece.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\default_value_objectwriter.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\error_listener.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\field_mask_utility.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\json_escaping.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\json_objectwriter.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\json_stream_parser.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\object_writer.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\proto_writer.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\protostream_objectsource.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\protostream_objectwriter.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\type_info.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\type_info_test_helper.cc" />
+    <ClCompile Include="src\google\protobuf\util\internal\utility.cc" />
+    <ClCompile Include="src\google\protobuf\util\json_util.cc" />
+    <ClCompile Include="src\google\protobuf\util\message_differencer.cc" />
+    <ClCompile Include="src\google\protobuf\util\time_util.cc" />
+    <ClCompile Include="src\google\protobuf\util\type_resolver_util.cc" />
+    <ClCompile Include="src\google\protobuf\wire_format.cc" />
+    <ClCompile Include="src\google\protobuf\wrappers.pb.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

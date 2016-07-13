@@ -119,3 +119,4 @@ CMakeCache.txt
 *.sdf
 x64/
 *.suo
+*.user
